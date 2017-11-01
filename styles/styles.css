@@ -131,13 +131,51 @@ label:last-child {
 
 /* --------- table styles below here --------- */
 
+table {
+	background-color: #ccc;
+	width: 100%;
+}
+
+td {
+	font-family: tahoma;
+	border: 1px solid black;
+	padding: 4px;
+}
+
+th {
+	border: 1px solid black;
+}
 
 /* --------- unordered list styles below here --------- */
 
+ul {
+	list-style-type: none;
+	padding: 10px;
+	font-family: tahoma;
+	margin: 0px;
+}
+
+li {
+	display: block;
+	padding: 10px;
+	font-family: tahoma;
+	margin: 0px;
+	border-top: 5px;
+	border-bottom; 5px;
+}
 
 /* --------- definition list styles below here --------- */
 
+dt {
+	padding: 10px;
+	font-family: tahoma;
+	color: #ddd
+}
 
+dd {
+	padding: 5px;
+	font-family: arial;
+}
 
 
 /* --------- Basic responsive breakpoint --------- */
