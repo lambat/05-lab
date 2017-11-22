@@ -27,7 +27,7 @@ footer a:hover {
   
   Also sets styles for the section tags and hides them.
 */
-input,
+main > input,
 section {
   display: none;
   padding: 1em;
@@ -131,50 +131,30 @@ label:last-child {
 
 /* --------- table styles below here --------- */
 
-table {
-	background-color: #ccc;
-	width: 100%;
-}
-
-td {
-	font-family: tahoma;
-	border: 1px solid black;
-	padding: 4px;
-}
-
-th {
-	border: 1px solid black;
-}
 
 /* --------- unordered list styles below here --------- */
 
-ul {
-	list-style-type: none;
-	padding: 10px;
-	font-family: tahoma;
-	margin: 0px;
-}
-
-li {
-	display: block;
-	padding: 10px;
-	font-family: tahoma;
-	margin: 0px;
-	border-top: 5px;
-	border-bottom; 5px;
-}
 
 /* --------- definition list styles below here --------- */
 
-dt {
-	padding: 10px;
-	font-family: tahoma;
-	color: #ddd
+#content3 input {
+  display: inline-block;
+  padding: 1em;
 }
-
-dd {
-	padding: 5px;
-	font-family: arial;
+#content3 input[type="submit"] {
+  line-height: 1.4em;
+  background: #eee;
+  border: 1px solid #aaa;
+  width: 6em;
+}
+#content3 label {
+  display: inline;
+  width: 200px;
+  background: #fff;
+  border-right: none;
+}
+#content3 #space-for-paragraphs {
+	display: block;
 }
 
 
