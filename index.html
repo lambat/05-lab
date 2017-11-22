@@ -23,14 +23,14 @@
       the 'checked' attribute determines which tab will show when the page loads
       the actual radio buttons for the input tag are hidden in the CSS
     -->
-    <input id="tab1" type="radio" name="tabs" checked>
+    <input id="tab1" type="radio" name="tabs">
     <!-- the *label* for the radio button forms the clickable tabs -->
     <label for="tab1"><i class="fa fa-code"></i><span>HTML5</span></label>
 
     <input id="tab2" type="radio" name="tabs">
     <label for="tab2"><i class="fa fa-hashtag"></i><span>CSS</span></label>
 
-    <input id="tab3" type="radio" name="tabs">
+    <input id="tab3" type="radio" name="tabs" checked>
     <label for="tab3"><i class="fa fa-bug"></i><span>JavaScript</span></label>
 
     <!-- content for tab 1: HTML5 -->
@@ -40,25 +40,12 @@
       </header>
 
       <table>
-		<thead>
-        <tr>
-          <th>Test</th>
-          <th>Test</th>
-          <th>Test</th>
-          <th>Test</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-        </tr>
+        <!-- one row of table header tags -->
+        <!-- 5 rows of table data tags -->
       </table>
 
       <footer>
-        <p><a href="#">add a link to an HTML5 resource here</a></p>
+        <p><a href="#">add an 'a' tag link to an HTML5 resource on the web</a></p>
       </footer>
     </section>
 
@@ -69,15 +56,11 @@
       </header>
 
       <ul>
-      <li>Test</li>
-      <li>Test</li>
-      <li>Test</li>
-      <li>Test</li>
-      <li>Test</li>
-    </ul>
+        <!-- 5 li tags -->
+      </ul>
 
       <footer>
-        <p>add a link to a CSS resource (see the HTML link above)</p>
+        <p><a href="#">add an 'a' tag link to a CSS resource on the web</a></p>
       </footer>
     </section>
 
@@ -87,20 +70,27 @@
         <h2>JavaScript</h2>
       </header>
 
-      <dl>
-		<dt>Test</dt>
-		<dd>Test</dd>
-		<dt>Test</dt>
-		<dd>Test</dd>
-	  </dl>
+      <form id="sentence-form">
+        <label for="sentence">Type a sentence here</label>
+        <input id="sentence" type="text" placeholder="Type here....">
+        <input type="submit">
+      </form>
+      
+      <!--
+        An empty numbered list - the li elements are added in JavaScript.
+        If you use a 'section' tag, change the JavaScript to add 'p' tags.
+      -->
+      <ol id="space-for-paragraphs">
+      </ol>
 
       <footer>
-        <p>add a link to a JavaScript resource</p>
+        <p><a href="#">add an 'a' tag link to a JavaScript resource on the web</a></p>
       </footer>
     </section>
 
   </main>
 
+  <script src="scripts/scripts.js"></script>
   <!-- adapted from a CodePen by Thierry Koblentz: http://cssmojo.com/pure-css-tab-panel/ -->
 </body>
 </html>
